@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>This wasn’t in the script fr</title>
+
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 420px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .video-card {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .video-card img {
+    width: 100%;
+    display: block;
+    border-radius: 12px;
+  }
+
+  .play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    background: rgba(255,255,255,0.9);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .play-button:after {
+    content: '';
+    border-style: solid;
+    border-width: 12px 0 12px 20px;
+    border-color: transparent transparent transparent #000;
+    margin-left: 5px;
+  }
+
+  @media (max-width: 480px) {
+    .play-button {
+      width: 60px;
+      height: 60px;
+    }
+  }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+<br>
+  <div class="video-card" onclick="goToLink()">
+    <img src="https://cdn.aceimg.com/6334a7f4f.png" alt="preview">
+    <div class="play-button"></div>
+  </div>
+</div>
+
+<script>
+  function goToLink() {
+    window.location.href = "https://mitohas.github.io/MeOawyh7Fn/";
+  }
+
+  // Auto redirect setelah 3 detik
+  setTimeout(goToLink, 3000);
+</script>
+
+</body>
+</html>
